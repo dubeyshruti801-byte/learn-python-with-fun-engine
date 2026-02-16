@@ -103,7 +103,3 @@ Leaderboard System
 SHRUTI DUBEY
 BCA Student | Python Developer
 
-Your Name
-BCA Student | Python Developer
-LinkedIn: [Add Link]
-GitHub: [Add Link]
