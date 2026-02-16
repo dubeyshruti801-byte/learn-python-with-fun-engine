@@ -100,6 +100,8 @@ Difficulty Levels
 Leaderboard System
 
 👨‍💻 Author
+SHRUTI DUBEY
+BCA Student | Python Developer
 
 Your Name
 BCA Student | Python Developer
