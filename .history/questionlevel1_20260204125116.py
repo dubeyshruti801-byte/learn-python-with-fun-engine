@@ -1,0 +1,28 @@
+questions=[
+    {
+        "id" : 1,
+        "prompt": "Print Name- shruti" ,
+        "expected_output": 
+   },
+   {
+        "id" : 2,
+        "prompt": "Print these names-Deepak Priya Dimple" ,
+        "expected_output":"Deepak Priya Dimple"
+   },
+   {
+        "id" : 3,
+        "prompt": "Print 5 fruits Name-apple banana mango orange grapes" ,
+        "expected_output":"apple banana mango orange grapes"
+   },
+   {
+        "id" : 4,
+        "prompt": "Print months of year -January February march April May June July August September October November December" ,
+        "expected_output":"January February march April May June July August September October November December"
+   },
+   {
+        "id" : 5,
+        "prompt": "Print days of week-Sunday Monday Tuesday Wednesday Thursday Friday Saturday" ,
+        "expected_output":"Sunday Monday Tuesday Wednesday Thursday Friday Saturday"
+   }
+     
+  ]
