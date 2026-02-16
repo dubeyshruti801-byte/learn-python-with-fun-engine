@@ -51,17 +51,7 @@ def validate_code(code, questions):
     has_function_call = False
     has_return = False
     while_true_detected = False
-
     expects= questions["expects"]
-    ''' METHOD_MAP = {
-    "list": ["append", "extend", "insert", "pop", "remove", "clear"],
-    "set": ["add", "remove", "clear", "pop"],
-    "dict": ["get", "keys", "values", "items", "update"],
-    "tuple": []
-      }
-
-    collection_type = expects.get("collection_type")
-    SAFE_METHODS = METHOD_MAP.get(collection_type, [])'''
     SAFE_METHODS = ["append", "extend", "insert", "pop", "remove", "items","split"]
     output= []
     sandbox_locals= {}
