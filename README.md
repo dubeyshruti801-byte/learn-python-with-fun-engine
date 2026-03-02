@@ -1,105 +1,197 @@
-# learn-python-with-fun-engine
-secure Python learning game engine with AST validation and sandboxed execution.
-🚀 PyPlay Engine – Secure Python Learning Game
+🚀 Learn Python With Fun – Game Engine (FastAPI Version)
+
+A secure, level-based Python learning game engine with FastAPI backend and MongoDB integration.
+
 📌 Overview
 
-PyPlay Engine is a modular Python-based learning system designed to help beginners practice Python fundamentals in a safe and interactive way.
+Learn Python With Fun is a structured Python learning platform that allows users to solve coding challenges level-by-level in a controlled environment.
 
-The engine securely executes user-submitted Python code using sandboxing techniques, AST validation, and infinite loop detection.
+The system includes:
 
-This project focuses on building real software architecture while solving a real learning problem.
+A secure execution engine with AST validation
 
-🎯 Features
+Backend built using FastAPI
 
-Modular package structure (ui, engine, questions)
+MongoDB-based user progress tracking
 
-Secure exec() sandbox environment
+Controlled progression system
 
-Infinite loop detection using ast
+Replayable practice mode
 
-Timeout protection using signal
+This project demonstrates real backend architecture, API design, and database-driven state management.
+
+🏗️ Tech Stack
+
+Python
+
+FastAPI
+
+MongoDB (MongoDB Atlas)
+
+Motor (Async MongoDB Driver)
+
+AST (Abstract Syntax Tree)
+
+Secure sandboxed execution
+
+Swagger UI (Auto-generated API docs)
+
+🎯 Core Features
+🧠 Secure Code Execution
+
+AST parsing and validation
+
+Infinite loop detection
+
+Restricted execution environment
 
 Runtime error handling
 
-Level-based question system
+🎮 Game Engine Logic
 
-Score tracking system
+Level-based progression
 
-Clean terminal-based user interface
+Question-by-question validation
+
+Score tracking
+
+Level completion detection
+
+Game completion state
+
+Replay system (/restart endpoint)
+
+🌐 FastAPI Backend
+
+/start – Start new game
+
+/question/{username} – Get current question
+
+/submit – Submit solution (backend-controlled progression)
+
+/progress/{username} – View user progress
+
+/restart – Restart completed game
+
+🗄️ MongoDB Integration
+
+Stores:
+
+username
+
+current_level
+
+current_question_index
+
+questions_cleared
+
+levels_cleared
+
+score
+
+game_completed
+
+Backend fully controls progression logic
+
+Prevents skipping levels
+
+Prevents duplicate submissions
+
+📂 Project Structure
+app/
+│
+├── engine/
+│     ├── engine.py
+│     ├── validation.py
+│
+├── questions/
+│     ├── questionlevel1.py
+│     ├── questionlevel2.py
+│     ├── questionlevel3.py
+│     ├── questionlevel4.py
+│     ├── questionlevel5.py
+│
+├── database/
+│     └── mongodb.py
+│
+├── main.py
+│
+requirements.txt
+
+▶️ How To Run Locally
+
+Clone repository
+
+Create virtual environment
+
+python -m venv venv
+venv\Scripts\activate
+
+
+Install dependencies
+
+pip install -r requirements.txt
+
+
+Create .env file:
+
+MONGODB_URL=your_mongodb_connection_string
+
+
+Run server:
+
+uvicorn app.main:app --reload
+
+
+Open Swagger UI:
+
+http://127.0.0.1:8000/docs
 
 🛡️ Security Implementation
 
 The engine prevents unsafe execution by:
 
-Parsing user code using ast
+Parsing user code using AST
 
-Detecting while True infinite loops
+Detecting infinite loops
 
-Using signal.alarm() to enforce execution time limits
+Restricting execution scope
 
-Restricting global execution environment
+Enforcing execution timeout
 
-Handling runtime exceptions safely
+Catching runtime errors safely
 
-📂 Project Structure
-Game engine-V1(Basic levels)/
-│
-├── ui/
-│     └── main.py
-│
-├── engine/
-│     ├── engine.py
-│     ├── validation.py
-│     └── __init__.py
-│
-├── questions/
-│     ├── questionlevel1.py
-│     └── __init__.py
+🧠 Concepts Demonstrated
 
-▶️ How to Run
+REST API Design
 
-Clone the repository
+Async Programming (FastAPI + Motor)
 
-Open terminal inside the project root directory
+Database-driven state management
 
-Run:
+Secure code execution
 
-python -m ui.main
+Backend-controlled progression
 
+Clean modular architecture
 
-Make sure all folders contain __init__.py files.
-
-🧠 Concepts Used
-
-Python Packages & Modules
-
-Relative and Absolute Imports
-
-Abstract Syntax Tree (AST)
-
-Sandboxed Code Execution
-
-Timeout Handling with signal
-
-Exception Handling
-
-Modular Software Architecture
+Version control & branch management
 
 🚀 Future Improvements
 
-GUI Version (Tkinter / PyQt)
+Frontend UI (React / Next.js)
 
-Web Version (Flask / Django)
+Authentication (JWT)
 
-User Progress Tracking
+Leaderboard system
 
-Database Integration
+Best score tracking
 
-Difficulty Levels
+Docker deployment
 
-Leaderboard System
+Cloud hosting (Render / Railway / AWS)
 
-👨‍💻 Author
-SHRUTI DUBEY
-BCA Student | Python Developer
+👩‍💻 Author
 
+Shruti Dubey
+BCA Student | Python Backend Developer
